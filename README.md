@@ -6,7 +6,7 @@ X‑Cleanser – Twitter/X Feed Filter (Manifest V3)
 
 Hide the noise – keep the signal. X‑Cleanser is an open‑source Chrome/Brave extension that removes unwanted content in real‑time while you browse X.
 
-------------------------------------------------------------------------
+
 Features
 ------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ Accounts you already follow are never hidden, even if they match a rule.
 
 _All processing happens client‑side only – nothing is collected, nothing is sent anywhere.___
 
-------------------------------------------------------------------------
+
 Installation
 ------------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ chrome://extensions  →  Developer mode  →  Load unpacked  →  select this f
 
 We’re preparing the public listing – once live, just click Add to Chrome.
 
-------------------------------------------------------------------------
+
 Using X‑Cleanser
 ------------------------------------------------------------------------
 
@@ -58,7 +58,7 @@ Close the popup → refresh the X tab.
 
 Changes are saved instantly; the ↻ Refresh pill will pulse to remind you to reload.
 
-------------------------------------------------------------------------
+
 How it works
 ------------------------------------------------------------------------
 
@@ -74,7 +74,7 @@ Minimal CSS (article[data-xc-hide]{display:none}) removes layout gaps.
 Because we never modify in‑place elements outside our own selector,
 X’s virtual scroller ≠ snap and scrolling stays smooth.
 
-------------------------------------------------------------------------
+
 Development
 ------------------------------------------------------------------------
 
@@ -89,19 +89,19 @@ background.js – relays settings between popup ⇄ content.
 
 popup/ – vanilla JS + minimal CSS UI.
 
-------------------------------------------------------------------------
+
 Privacy
 ------------------------------------------------------------------------
 
 This extension stores options locally using chrome.storage.local, never touches cookies or sends network requests outside X’s own calls, and contains no analytics, trackers, or remote code.
 
-------------------------------------------------------------------------
+
 Licence
 ------------------------------------------------------------------------
 
 MIT – do whatever you want, just keep the copyright & licence notice.
 
-------------------------------------------------------------------------
+
 Credits / inspiration
 ------------------------------------------------------------------------
 
