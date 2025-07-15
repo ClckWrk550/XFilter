@@ -1,16 +1,14 @@
-# XFilter
+# XFilter V1 (Beta Release)
 App to filter content, ads, and profile types on X.com
 
 
 X‑Cleanser – Twitter/X Feed Filter (Manifest V3)
 
-Hide the noise – keep the signal. X‑Cleanser is an open‑source Chrome/Brave extension that removes unwanted content in real‑time while you browse X (formerly Twitter).
+Hide the noise – keep the signal. X‑Cleanser is an open‑source Chrome/Brave extension that removes unwanted content in real‑time while you browse X.
 
-✨ What it does
-
-Filter
-
-Description
+------------------------------------------------------------------------
+Features
+------------------------------------------------------------------------
 
 **Keyword / emoji blocker**
 
@@ -32,9 +30,11 @@ Keeps the same rules inside conversation threads and quote‑tweets.
 
 Accounts you already follow are never hidden, even if they match a rule.
 
-All processing happens client‑side only – nothing is collected, nothing is sent anywhere.
+_All processing happens client‑side only – nothing is collected, nothing is sent anywhere.___
 
-📦 Installation
+------------------------------------------------------------------------
+Installation
+------------------------------------------------------------------------
 
 1 – Load unpacked (dev)
 
@@ -44,7 +44,9 @@ chrome://extensions  →  Developer mode  →  Load unpacked  →  select this f
 
 We’re preparing the public listing – once live, just click Add to Chrome.
 
-🚀 Using X‑Cleanser
+------------------------------------------------------------------------
+Using X‑Cleanser
+------------------------------------------------------------------------
 
 Click the ✖︎ icon in the extensions toolbar.
 
@@ -56,7 +58,9 @@ Close the popup → refresh the X tab.
 
 Changes are saved instantly; the ↻ Refresh pill will pulse to remind you to reload.
 
-🛠️ How it works
+------------------------------------------------------------------------
+How it works
+------------------------------------------------------------------------
 
 page_patch.js intercepts fetch/XHR requests whose URL contains
 …/graphql/.../(HomeTimeline|HomeLatestTimeline|TweetDetail).
@@ -70,7 +74,9 @@ Minimal CSS (article[data-xc-hide]{display:none}) removes layout gaps.
 Because we never modify in‑place elements outside our own selector,
 X’s virtual scroller ≠ snap and scrolling stays smooth.
 
-🧑‍💻 Development
+------------------------------------------------------------------------
+Development
+------------------------------------------------------------------------
 
 npm i        # no deps yet – placeholder
 npm run dev  # watches & zips (coming)
@@ -83,23 +89,21 @@ background.js – relays settings between popup ⇄ content.
 
 popup/ – vanilla JS + minimal CSS UI.
 
-🔐 Privacy
+------------------------------------------------------------------------
+Privacy
+------------------------------------------------------------------------
 
-This extension:
+This extension stores options locally using chrome.storage.local, never touches cookies or sends network requests outside X’s own calls, and contains no analytics, trackers, or remote code.
 
-stores options locally using chrome.storage.local.
-
-never touches cookies or sends network requests outside X’s own calls.
-
-contains no analytics, trackers, or remote code.
-
-📄 Licence
+------------------------------------------------------------------------
+Licence
+------------------------------------------------------------------------
 
 MIT – do whatever you want, just keep the copyright & licence notice.
 
-🙏 Credits / inspiration
+------------------------------------------------------------------------
+Credits / inspiration
+------------------------------------------------------------------------
 
-Thanks to https://github.com/your‑handle for testing & feedback.
-
-Ad‑blocking heuristics inspired by the minimal approach in the clean‑twitter‑feed project.
+All the rejects who poisoned my feed with garbage content and takes that required further filtering than a simple keyword mute: you inspired this.
 
