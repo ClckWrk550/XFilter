@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>XFeedFilter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>XFeedFilter</h1>
+
+  <label>Blocked keywords / emojis<br>
+    <textarea id="kw" placeholder="one keyword per line"></textarea>
+  </label>
+
+  <fieldset>
+    <legend>Hide posts if keyword is found in:</legend>
+    <label><input type="checkbox" id="bio"    checked> Bio</label><br>
+    <label><input type="checkbox" id="name">   Display name</label><br>
+    <label><input type="checkbox" id="handle"> @handle</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Misc Settings</legend>
+    <label><input type="checkbox" id="filterReplies" checked> Filter Replies</label><br>
+    <label><input type="checkbox" id="hideVerified"> Hide Verified Accounts</label><br>
+    <label><input type="checkbox" id="hidePromoted"> Hide Promoted Tweets</label>
+  </fieldset>
+
+  <span id="refresh" class="refresh" hidden>Refresh page ↻</span>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
